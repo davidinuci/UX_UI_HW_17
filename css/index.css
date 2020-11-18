@@ -1,0 +1,39 @@
+body {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.inline-block {
+        display:inline-block;
+        vertical-align: top;
+}
+.logo {
+    width:23%;
+    padding:1%;
+    text-align:center;
+ 
+}
+nav {
+    width:72%;      /*  original 73% */
+    padding:1%;
+    background-color:lightblue;
+  
+}
+.inline {
+    display:inline;
+}
+
+.navitem {
+    padding: 5px;
+}
+
+ul {
+    text-align: right;
+}
+
+.heroImg {
+    height:600px;
+    padding:25px;
+}
+
