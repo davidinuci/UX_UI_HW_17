@@ -1,15 +1,13 @@
 body {
-
     font-family: 'Montserrat', sans-serif;
+    margin:0 70px 0 70px;
 }
-
-
 .inline-block {
         display:inline-block;
         vertical-align: bottom;
 }
 .logo {
-    background-color: red;
+    /* background-color: red; */
     width:23%;
     padding:1%;
     text-align:center;
@@ -17,36 +15,135 @@ body {
 .logoitem { 
     display:inline-block;
     width:130px;
-    position: relative;
+    position:relative;
     left:0px;
-    top:5px;
+    top:-10px;
 }
-
 .designtitle {
     display:inline-block;
-
 }
-
-nav {
+.navbar {
+    /* background-color:lightblue;  */
     width:72%;      /*  original 73% */
     padding:1%;
-    background-color:lightblue;
-  
+    
 }
 .inline {
     display:inline;
 }
-
 .navitem {
     padding: 5px;
+    font-size:14px;
 }
-
 ul {
     text-align: right;
 }
 
 .heroImg {
-    height:600px;
-    padding:25px;
+    /* width:500px; */
+    /* padding:25px; */
+    text-align:center;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "project1 project2"
+    "project3 project4"
 }
 
+
+.project1 {
+    grid-area:project1;
+    padding:20px;
+    
+    /* background-color:lightblue; */
+}
+
+.project2 {
+    grid-area:project2;
+    padding:20px;
+}
+.project3 {
+    grid-area:project3;
+    padding:20px;
+}
+.project4 {
+    grid-area:project4;
+    padding:20px;
+   
+}
+
+.projectthumbnail {
+
+    width:580px;
+}
+
+
+.projecttitle {
+    font-size:18px;
+    font-weight: 400;
+    padding:6px;
+}
+
+
+.projectdescription {
+    font-size:14px;
+    font-weight:200;
+    padding:6px;
+
+}
+
+
+
+
+.viewmore {
+    width:100px;
+    height:40px;
+    background-color:#7EBE2D;
+    border:none;
+}
+.socialmedia {
+    padding:50px;
+    text-align:center;
+    
+}
+.socialmedialogo {
+    width:40px;
+    
+}
+
+
+
+/* About Me css */
+
+
+.aboutmestructure {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 1fr;
+    grid-template-areas:
+    "aboutme aboutme"
+    "mypicture myskills"
+
+}
+
+.aboutme {
+    grid-area:aboutme;
+    background-color:lightblue;
+  
+}
+.myname {
+    justify-content: center;
+}
+
+.mypicture {
+    grid-area:mypicture;
+    background-color:rgb(191, 230, 173);
+
+}
+
+.myskills {
+    background-color:rgb(241, 122, 202);
+    grid-area:myskills;
+
+}
