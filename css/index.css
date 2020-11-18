@@ -6,14 +6,27 @@ body {
 
 .inline-block {
         display:inline-block;
-        vertical-align: top;
+        vertical-align: bottom;
 }
 .logo {
+    background-color: red;
     width:23%;
     padding:1%;
     text-align:center;
- 
 }
+.logoitem { 
+    display:inline-block;
+    width:130px;
+    position: relative;
+    left:0px;
+    top:5px;
+}
+
+.designtitle {
+    display:inline-block;
+
+}
+
 nav {
     width:72%;      /*  original 73% */
     padding:1%;
